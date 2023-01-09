@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// font-family: 'Space Grotesk', sans-serif;
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+$primary: #ffeedf;
+$secondary: #145434;
+body{
+    background-color: $primary;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    color: $secondary;
+    border-bottom: #145434 2px solid;
+    p{
+        font-size: 36px;
+        font-weight: 700;
+    }
+    span{
+        font-size: 36px;
+    }
+}
+
+.card-container{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 80px auto 80px;
+    .card{
+        width: 400px;
+        height: 250px;
+        background-color: $secondary;
+        position: relative;
+        color: $primary;
+        .number{
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            color: $secondary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 2px solid $secondary;
+            background-color: $primary;
+        }
+        .title{
+            font-size: 36px;
+            font-weight: normal;
+            height: 90px;
+            margin: 40px 30px 0;
+            border-bottom: 2px solid $primary;
+        }
+        .sub{
+            font-size: 18px;
+            font-weight: normal;
+            padding: 10px 30px;
+        }
+        .text{
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0 30px;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            font-size: 14px;
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            background-color: $primary;
+            color: $secondary;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                position: absolute;
+                right: 10px;
+            }
+        }
+        button:hover{
+            background-color: $secondary;
+            color: $primary
+        }
+    }
+
+}
